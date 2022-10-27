@@ -6,7 +6,8 @@ import unittest
 # search for the url in the University of Michgian wikipedia page (in the third pargraph of the intro)
 # HINT: You will have to add https://en.wikipedia.org to the URL retrieved using BeautifulSoup
 def getLink(soup):
-    BeautifulSoup =  https://en.wikipedia.org
+    
+    r = requests.get(https://en.wikipedia.org)
     
     pass
 
@@ -14,6 +15,7 @@ def getLink(soup):
 # founded and organize the same into key-value pairs.
 def getAdmissionsInfo2019(soup):
      https://en.wikipedia.org.get("details")
+     tag_object.attrs 
 
     pass
 
@@ -23,7 +25,7 @@ def main():
     # Task 1: Create a BeautifulSoup object and name it soup. Refer to discussion slides or lecture slides to complete this
 
     #### YOUR CODE HERE####
-    object = soup
+    soup = BeautifulSoup(r.text, ‘html.parser’)
 
     #Call the functions getLink(soup) and getAdmissionsInfo2019(soup) on your soup object.
     getLink(soup)
